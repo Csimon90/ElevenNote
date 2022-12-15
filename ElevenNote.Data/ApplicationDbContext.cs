@@ -1,3 +1,4 @@
+using ElevenNote.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -7,4 +8,6 @@ using Microsoft.EntityFrameworkCore;
         {
             
         }   
-    }
+
+public DbSet<UserEntity> Users {get; set;}
+}
