@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ElevenNote.Services.User;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,4 +30,12 @@ app.MapControllers();
 
 app.Run();
 
+
+
+services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+
+//add user service/interface for dependency injection here
+//services.ADDScoped<IUserService, UserService>();
+
+services.AddControllers();
 
