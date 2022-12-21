@@ -1,7 +1,14 @@
+using ElevenNote.Data;
+using ElevenNote.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using ElevenNote.Models.User;
 
 
-namespace ElevenNote.Services.Users
+namespace ElevenNote.Services.User
 {
 
     public class UserService: IUserService
@@ -21,7 +28,7 @@ namespace ElevenNote.Services.Users
             DateCreated = DateTime.Now
         };
 
-        _context.Users.Add(entity);
+        _context.User.Add(entity);
         var numberOfChanges = await _context.SaveChangesAsync();
 
         return numberOfChanges == 1;

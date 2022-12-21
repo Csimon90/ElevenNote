@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 using ElevenNote.Services;
 
-namespace ElevenNote.Services.Users
+namespace ElevenNote.Services.User
 {
     public class IUserService
     {
