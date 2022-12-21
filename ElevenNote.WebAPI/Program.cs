@@ -35,7 +35,7 @@ app.Run();
 services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
 //add user service/interface for dependency injection here
-//services.ADDScoped<IUserService, UserService>();
+services.ADDScoped<IUserService, UserService>();
 
 services.AddControllers();
 
