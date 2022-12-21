@@ -15,9 +15,5 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3"/>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5"/>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ElevenNote.Services\ElevenNote.Services.csproj"/>
-    <ProjectReference Include="..\ElevenNote.Models\ElevenNote.Models.csproj"/>
-    <ProjectReference Include="..\ElevenNote.Data\ElevenNote.Data.csproj"/>
-  </ItemGroup>
+
 </Project>

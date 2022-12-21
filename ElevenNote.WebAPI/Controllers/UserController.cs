@@ -21,7 +21,7 @@ namespace ElevenNote.WebAPI.Controllers{
     }
 
     [HttpPost("Register")]
-    public async Task<IActionResult> await; RegisterUser([FromBody] UserRegister model)
+    public async Task<IActionResult> await RegisterUser([FromBody] UserRegister model)
     {
         if (!ModelState.IsValid)
         {
