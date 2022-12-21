@@ -1,17 +1,11 @@
-using Microsoft.EntityFrameworkCore;
-using ElevenNote.Services.User;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
 
+builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<ApplicationDbContext>(options => {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
 
 var app = builder.Build();
 
@@ -29,12 +23,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
-
-services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
-
-//adding user service/interface for dependency injection 
-services.AddScoped<IUserService, UserService>();
-
-services.AddControllers();
-
