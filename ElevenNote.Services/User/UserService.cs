@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using ElevenNote.Models.User;
 
-
 namespace ElevenNote.Services.User
 {
 

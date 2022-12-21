@@ -2,13 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-using ElevenNote.Services;
+using ElevenNote.Models.User;
 
 namespace ElevenNote.Services.User
 {
-    public class IUserService
+    public interface IUserService
     {
-        
+        Task<bool> RegisterUserAsync(UserRegister model);
     }
 }
