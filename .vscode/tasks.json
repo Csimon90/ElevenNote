@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "msbuild",
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+			"label": "Build: ElevenNote.Services.csproj",
+			"detail": "Build the ElevenNote.Services.csproj project using dotnet build"
+		}
+	]
+}

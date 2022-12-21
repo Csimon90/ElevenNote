@@ -6,10 +6,11 @@ using ElevenNote.Services.User;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ElevenNote.WebAPI.Controllers
-{
+namespace ElevenNote.WebAPI.Controllers{
+
     [Route("api/[controller]")]
     [ApiController]
+
     public class UserController: ControllerBase
     {
         private readonly IUserService _service;
@@ -20,7 +21,7 @@ namespace ElevenNote.WebAPI.Controllers
     }
 
     [HttpPost("Register")]
-    public async Task<IActionResult> RegisterUser([FromBody] UserRegister model)
+    public async Task<IActionResult> await; RegisterUser([FromBody] UserRegister model)
     {
         if (!ModelState.IsValid)
         {

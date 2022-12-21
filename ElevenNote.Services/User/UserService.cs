@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ElevenNote.Services.User
 {
-
     public class UserService: IUserService
     {
     private readonly ApplicationDbContext _context;
