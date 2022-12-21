@@ -11,4 +11,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ElevenNote.Services\ElevenNote.Services.csproj" />
+    <ProjectReference Include="..\ElevenNote.Models\ElevenNote.Models.csproj" />
+    <ProjectReference Include="..\ElevenNote.Data\ElevenNote.Data.csproj" />
+  </ItemGroup>
+
 </Project>
