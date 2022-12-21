@@ -5,8 +5,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.1"/>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5"/>
-</ItemGroup>
-<ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\ElevenNote.Models\ElevenNote.Models.csproj"/>
     <ProjectReference Include="..\ElevenNote.Data\ElevenNote.Data.csproj"/>
   </ItemGroup>
